@@ -1,3 +1,4 @@
+import SignInButton from '../SignInButton';
 import styles from './styles.module.scss';
 
 const Header: React.FC = () => {
@@ -11,6 +12,8 @@ const Header: React.FC = () => {
           </a>
           <a href="">Posts</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   );
