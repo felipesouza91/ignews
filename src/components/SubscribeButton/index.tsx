@@ -4,11 +4,7 @@ import { api } from '../../services/api';
 import { getStripeJS } from '../../services/stripe-js';
 import styles from './styles.module.scss';
 
-interface ISubscribeButtonProps {
-  priceId: string;
-}
-
-const SubscribeButton: React.FC<ISubscribeButtonProps> = ({ priceId }) => {
+const SubscribeButton: React.FC = () => {
   const [session] = useSession();
   const router = useRouter();
   async function handleSubscribe() {

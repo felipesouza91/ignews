@@ -26,10 +26,10 @@ const Post: React.FC<IPostProps> = ({ post }) => {
         <article className={styles.post}>
           <h1>{post.title}</h1>
           <time>{post.updatedAt}</time>
-          <div
-            className={styles.postContent}
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          ></div>
+            <div
+              className={styles.postContent}
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            ></div>
         </article>
       </main>
     </>
