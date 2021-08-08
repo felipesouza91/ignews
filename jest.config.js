@@ -8,4 +8,7 @@ module.exports = {
   },
   setupFilesAfterEnv: ['<rootDir>/src/tests/setupTests.ts'],
   testEnvironment: 'jsdom',
+  collectCoverage: true,
+  collectCoverageFrom: ['./src/**/*.tsx', '!./src/**/*.spec.{tsx}'],
+  coverageReporters: ['lcov', 'json'],
 };
