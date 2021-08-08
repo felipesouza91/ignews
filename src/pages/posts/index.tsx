@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async () => {
     [Prismic.Predicates.at('document.type', 'publication')],
     {
       fetch: ['publication.title', 'publication.content'],
-      pageSiz: 100,
+      pageSize: 100,
     }
   );
   const posts = reponse.results.map((post) => ({
